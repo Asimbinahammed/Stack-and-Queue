@@ -8,8 +8,16 @@ public class QueueMain {
 		queue.enqueue(30);
 		queue.enqueue(70);
 		queue.displayElements();
+		
+		//uc2
+		queue.dequeue();
+		queue.displayElements();
 
-
+		queue.dequeue();
+		queue.displayElements();
+		
+		queue.dequeue();
+		queue.displayElements();
 		
 
 	}

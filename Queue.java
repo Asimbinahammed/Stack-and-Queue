@@ -1,7 +1,7 @@
 package bridgelab;
 
 public class Queue {
-	static final int MAX = 3;
+	 int MAX = 3;
 	int start;
 	int a[] = new int[MAX];
 
@@ -24,14 +24,14 @@ public class Queue {
 		}
 	}
 
-	int dequeue() {
-		if (start < 0) {
-			System.out.println("Limit undefined");
-			return 0;
-		} else {
-			int x = a[start--];
-			return x;
+	void dequeue() {
+		for(int i=0;i<MAX;i++) {
+			int temp=a[i];
+			a[i]=a[i+1];
+			System.out.println(temp);
+			MAX--;
 		}
+		
 	}
 
 	public void displayElements() {
