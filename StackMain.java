@@ -7,7 +7,19 @@ public class StackMain {
 		stack.push(70);
 		stack.push(30);
 		stack.push(56);
+		stack.displayStackElements();
 		
+		//uc2
+		stack.peek();
+		stack.pop();
+		stack.displayStackElements();
+
+		stack.peek();
+		stack.pop();
+		stack.displayStackElements();
+		
+		stack.peek();
+		stack.pop();
 		stack.displayStackElements();
 
 	}
