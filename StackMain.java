@@ -1,26 +1,18 @@
-package bridgelabz;
+package com.bridgelabz;
 
-
+//main class
 public class StackMain {
 	public static void main(String[] args) {
-		Stack stack = new Stack();
-		stack.push(70);
-		stack.push(30);
-		stack.push(56);
-		stack.displayStackElements();
-		
-		//uc2
-		stack.peek();
-		stack.pop();
-		stack.displayStackElements();
+		// create Object of Implementing class
+		StackUsingLinkedlist obj = new StackUsingLinkedlist();
+		// insert Stack value
+		obj.push(70);
+		obj.push(30);
+		obj.push(56);
 
-		stack.peek();
-		stack.pop();
-		stack.displayStackElements();
-		
-		stack.peek();
-		stack.pop();
-		stack.displayStackElements();
+		// print Stack elements
+		obj.display();
 
+		
 	}
 }
