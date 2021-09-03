@@ -34,12 +34,11 @@ class StackUsingLinkedlist {
 	}
 
 	// return top element in a stack
-	public int peek() {
+	public void peek() {
 		if (!isEmpty()) {
-			return top.data;
+			System.out.println("top element in stack is "+top.data);
 		} else {
 			System.out.println("Stack is empty");
-			return -1;
 		}
 	}
 
@@ -49,6 +48,7 @@ class StackUsingLinkedlist {
 			System.out.print("\nStack Underflow");
 			return;
 		}
+		System.out.println("poped element is" + top.data);
 		top = (top).link;
 	}
 
@@ -59,7 +59,7 @@ class StackUsingLinkedlist {
 		} else {
 			Node temp = top;
 			while (temp != null) {
-				System.out.printf("%d->", temp.data);
+				System.out.println( temp.data);
 				temp = temp.link;
 			}
 		}
